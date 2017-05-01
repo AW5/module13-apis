@@ -16,8 +16,6 @@ You've used Python to load data from external files (either text files or locall
     - [HTTP Verbs](#http-verbs)
 - [Accessing Web APIs](#accessing-web-apis)
 - [JSON Data](#json-data)
-  - [Parsing JSON](#parsing-json)
-  - [Flattening Data](#flattening-data)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -106,8 +104,7 @@ You can then include this file in the **`.gitignore`** list in your repo; that w
 In order to access this variable in your "main" script, you can **`import`** this file as a module. The module is the name of the file, and you can access specific variables from it to include them in the "global" scope. Note that importing a file as a module will execute each line of code in that module (that isn't in a "main" block):
 
 ```python
-## in `myScript.R`
-
+## in `my_script.py`
 from apikeys import my_api_key
 
 print(my_api_key)  # key is now available!
